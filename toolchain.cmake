@@ -9,3 +9,4 @@ set(CMAKE_C_COMPILER "arm-none-eabi-gcc")
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
 set(CMAKE_OBJCOPY "arm-none-eabi-objcopy")
+set(CMAKE_SIZE "arm-none-eabi-size")

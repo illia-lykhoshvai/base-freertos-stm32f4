@@ -4,7 +4,10 @@
     
     "files.associations": {
         "stm32f0xx.h": "c",
-        "stm32f4xx.h": "c"
+        "stm32f4xx.h": "c",
+        "freertos.h": "c",
+        "projdefs.h": "c",
+        "freertosconfig.h": "c"
     },
     "cmake.configureOnOpen": true
 }
