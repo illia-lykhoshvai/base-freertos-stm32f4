@@ -48,6 +48,7 @@ add_compile_options("${c_compile_options}")
 add_compile_definitions("${compile_definitions}")
 
 include_directories("CMSIS/Inc/")
+include_directories("CMSIS/Inc/CMSIS_RTOS_V2/")
 include_directories("Inc/")
 include_directories("Startup/")
 include_directories("Inc/FreeRTOS/")
