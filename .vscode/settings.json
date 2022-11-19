@@ -9,7 +9,9 @@
         "projdefs.h": "c",
         "freertosconfig.h": "c",
         "task.h": "c",
-        "stm32f401xc.h": "c"
+        "stm32f401xc.h": "c",
+        "portable.h": "c",
+        "system_stm32f4xx.h": "c"
     },
     "cmake.configureOnOpen": true
 }

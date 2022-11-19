@@ -49,14 +49,16 @@ add_compile_definitions("${compile_definitions}")
 
 include_directories("CMSIS/Inc/")
 include_directories("CMSIS/Inc/CMSIS_RTOS_V2/")
+
 include_directories("Inc/")
 include_directories("Startup/")
-include_directories("Inc/FreeRTOS/")
 
-file (GLOB_RECURSE startup "Startup/*.[s]")
-file(GLOB_RECURSE sources "Src/*.[c]")
-file(GLOB_RECURSE freertos "Src/FreeRTOS/*.[c]")
-file(GLOB_RECURSE cmsis "CMSIS/Src/*.[c]")
+include_directories("FreeRTOS/Inc/")
+
+file (GLOB_RECURSE startup "Startup/*.s")
+file(GLOB_RECURSE sources "Src/*.c")
+file(GLOB_RECURSE freertos "FreeRTOS/Src/*.c")
+file(GLOB_RECURSE cmsis "CMSIS/Src/*.c")
 
 add_executable("${PROJECT_NAME}" ${cmsis} ${startup} ${freertos} ${sources})
 set_target_properties("${PROJECT_NAME}" PROPERTIES LINK_FLAGS "${link_flags}")
